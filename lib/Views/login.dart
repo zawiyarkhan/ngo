@@ -39,35 +39,6 @@ class LoginPageState extends State<LoginPage> {
                 height: 20,
               ),
 
-              Text(
-                "login with",
-                style: TextStyle(fontSize: 19),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    child: CircleAvatar(
-                      radius: 25,
-                      child: Image.asset("assets/google.png"),
-                      backgroundColor: Colors.white,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 15,
-                  ),
-                  GestureDetector(
-                    child: CircleAvatar(
-                      radius: 25,
-                      child: Image.asset("assets/facebook.png"),
-                    ),
-                  )
-                ],
-              ),
-
               SizedBox(
                 height: 30,
               ),
@@ -120,6 +91,37 @@ class LoginPageState extends State<LoginPage> {
                   );
                 },
                 child: Text('Sign Up'),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Text(
+                "login with",
+                style: TextStyle(fontSize: 19),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    child: CircleAvatar(
+                      radius: 25,
+                      child: Image.asset("assets/google.png"),
+                      backgroundColor: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  GestureDetector(
+                    child: CircleAvatar(
+                      radius: 25,
+                      child: Image.asset("assets/facebook.png"),
+                    ),
+                  )
+                ],
               ),
               Spacer(
                 flex: 1,

@@ -41,8 +41,14 @@ class _NGOCardState extends State<NGOCard> {
                   height: height / 6.2,
                   width: width / 3.3,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.amber),
+                    borderRadius: BorderRadius.circular(15),
+                    // color: Colors.amber,
+                    image: DecorationImage(
+                        image: AssetImage(
+                          "assets/images.jpeg",
+                        ),
+                        fit: BoxFit.cover),
+                  ),
                   // color: Colors.amber,
                 ),
               ),
